@@ -1,0 +1,179 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "nombre": "Administrador Home Pet",
+      "correo": "admin@homepet.co",
+      "contrasena": "Admin2026",
+      "telefono": "3000000000",
+      "direccion": "Bogotá",
+      "rol": "administrador"
+    },
+    {
+      "id": 2,
+      "nombre": "María Gómez",
+      "correo": "maria@homepet.co",
+      "contrasena": "Cliente2026",
+      "telefono": "3013334455",
+      "direccion": "Calle 80 # 15-20, Bogotá",
+      "rol": "propietario"
+    },
+    {
+      "id": 3,
+      "nombre": "Carlos Ruiz",
+      "correo": "carlos@homepet.co",
+      "contrasena": "Cliente2026",
+      "telefono": "3125556677",
+      "direccion": "Carrera 7 # 120-45, Bogotá",
+      "rol": "propietario"
+    }
+  ],
+  "mascotas": [
+    {
+      "id": 1,
+      "usuarioId": 2,
+      "nombre": "Luna",
+      "especie": "Perro",
+      "raza": "Golden Retriever",
+      "edad": 3
+    },
+    {
+      "id": 2,
+      "usuarioId": 2,
+      "nombre": "Michi",
+      "especie": "Gato",
+      "raza": "Criollo",
+      "edad": 5
+    },
+    {
+      "id": 3,
+      "usuarioId": 3,
+      "nombre": "Rocky",
+      "especie": "Perro",
+      "raza": "Beagle",
+      "edad": 2
+    },
+    {
+      "id": 4,
+      "usuarioId": 3,
+      "nombre": "Kiwi",
+      "especie": "Ave",
+      "raza": "Periquito",
+      "edad": 1
+    }
+  ],
+  "proveedores": [
+    {
+      "id": 1,
+      "nombre": "Clínica VetCasa",
+      "telefono": "3101112233",
+      "correo": "vetcasa@homepet.co",
+      "direccion": "Chapinero, Bogotá",
+      "estado": "activo",
+      "contrasena": "Proveedor2026"
+    },
+    {
+      "id": 2,
+      "nombre": "Patitas Spa",
+      "telefono": "3204445566",
+      "correo": "patitas@homepet.co",
+      "direccion": "Usaquén, Bogotá",
+      "estado": "activo",
+      "contrasena": "Proveedor2026"
+    },
+    {
+      "id": 3,
+      "nombre": "Can Educa",
+      "telefono": "3157778899",
+      "correo": "caneduca@homepet.co",
+      "direccion": "Suba, Bogotá",
+      "estado": "activo",
+      "contrasena": "Proveedor2026"
+    },
+    {
+      "id": 4,
+      "nombre": "Huellas Eternas",
+      "telefono": "3009990011",
+      "correo": "huellas@homepet.co",
+      "direccion": "Bogotá y alrededores",
+      "estado": "activo",
+      "contrasena": "Proveedor2026"
+    },
+    {
+      "id": 5,
+      "nombre": "Paseos Felices",
+      "telefono": "3112223344",
+      "correo": "paseos@homepet.co",
+      "direccion": "Kennedy, Bogotá",
+      "estado": "pendiente",
+      "contrasena": "Proveedor2026"
+    }
+  ],
+  "servicios": [
+    {
+      "id": 1,
+      "proveedorId": 1,
+      "nombre": "Consulta veterinaria general",
+      "descripcion": "Valoración completa del estado de salud de tu mascota en casa, con revisión de signos vitales y recomendaciones.",
+      "categoria": "salud",
+      "precio": 85000,
+      "disponibilidad": "disponible"
+    },
+    {
+      "id": 2,
+      "proveedorId": 1,
+      "nombre": "Vacunación antirrábica",
+      "descripcion": "Aplicación de la vacuna antirrábica con certificado y registro en el carné de vacunación.",
+      "categoria": "vacunacion",
+      "precio": 55000,
+      "disponibilidad": "disponible"
+    },
+    {
+      "id": 3,
+      "proveedorId": 2,
+      "nombre": "Baño y secado",
+      "descripcion": "Baño con champú hipoalergénico, secado, cepillado y perfume suave.",
+      "categoria": "estetica",
+      "precio": 45000,
+      "disponibilidad": "disponible"
+    },
+    {
+      "id": 4,
+      "proveedorId": 2,
+      "nombre": "Peluquería completa",
+      "descripcion": "Baño, corte de pelo según la raza, limpieza de oídos y corte de uñas.",
+      "categoria": "estetica",
+      "precio": 75000,
+      "disponibilidad": "disponible"
+    },
+    {
+      "id": 5,
+      "proveedorId": 2,
+      "nombre": "Masaje relajante",
+      "descripcion": "Sesión de masaje y aromaterapia para mascotas ansiosas o en recuperación.",
+      "categoria": "relajacion",
+      "precio": 60000,
+      "disponibilidad": "no_disponible"
+    },
+    {
+      "id": 6,
+      "proveedorId": 3,
+      "nombre": "Obediencia básica",
+      "descripcion": "Sesión de entrenamiento con refuerzo positivo: sentado, quieto, venir al llamado y caminar con correa.",
+      "categoria": "entrenamiento",
+      "precio": 70000,
+      "disponibilidad": "disponible"
+    },
+    {
+      "id": 7,
+      "proveedorId": 4,
+      "nombre": "Cremación individual",
+      "descripcion": "Recogida a domicilio, cremación individual y entrega de cenizas en urna.",
+      "categoria": "funeraria",
+      "precio": 450000,
+      "disponibilidad": "disponible"
+    }
+  ],
+  "mensajes": [],
+  "reservas": []
+}
