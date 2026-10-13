@@ -718,7 +718,11 @@ textarea:focus {
 }
 
 .etiqueta--activo,
-.etiqueta--disponible {
+.etiqueta--disponible,
+.etiqueta--confirmada,
+.etiqueta--pagada,
+.etiqueta--completada,
+.etiqueta--aprobado {
   background: var(--exito-claro);
   color: var(--exito);
 }
@@ -728,7 +732,11 @@ textarea:focus {
   color: var(--alerta);
 }
 
-.etiqueta--propietario {
+.etiqueta--propietario,
+.etiqueta--ingresos_comisiones,
+.etiqueta--servicios_demandados,
+.etiqueta--rendimiento_proveedores,
+.etiqueta--estado_reservas {
   background: var(--primario-claro);
   color: var(--primario);
 }
@@ -739,7 +747,9 @@ textarea:focus {
 }
 
 .etiqueta--suspendido,
-.etiqueta--no_disponible {
+.etiqueta--no_disponible,
+.etiqueta--cancelada,
+.etiqueta--rechazado {
   background: var(--peligro-claro);
   color: var(--peligro);
 }

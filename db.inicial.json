@@ -175,5 +175,84 @@
     }
   ],
   "mensajes": [],
-  "reservas": []
+  "reservas": [
+    {
+      "id": 1,
+      "usuarioId": 2,
+      "mascotaId": 1,
+      "servicioId": 1,
+      "proveedorId": 1,
+      "fecha": "2026-10-15",
+      "hora": "09:30",
+      "direccion": "Calle 80 # 15-20, Bogotá",
+      "notas": "Revisión general de rutina.",
+      "estado": "confirmada",
+      "creadoEn": "2026-10-11T14:20:00.000Z"
+    },
+    {
+      "id": 2,
+      "usuarioId": 2,
+      "mascotaId": 2,
+      "servicioId": 3,
+      "proveedorId": 2,
+      "fecha": "2026-10-14",
+      "hora": "14:00",
+      "direccion": "Calle 80 # 15-20, Bogotá",
+      "notas": "Gato un poco asustadizo.",
+      "estado": "pagada",
+      "creadoEn": "2026-10-10T11:00:00.000Z"
+    },
+    {
+      "id": 3,
+      "usuarioId": 3,
+      "mascotaId": 3,
+      "servicioId": 6,
+      "proveedorId": 3,
+      "fecha": "2026-10-16",
+      "hora": "16:00",
+      "direccion": "Carrera 7 # 120-45, Bogotá",
+      "notas": "Mucha energía.",
+      "estado": "pendiente",
+      "creadoEn": "2026-10-12T08:00:00.000Z"
+    }
+  ],
+  "pagos": [
+    {
+      "id": 1,
+      "reservaId": 2,
+      "usuarioId": 2,
+      "proveedorId": 2,
+      "servicioId": 3,
+      "valor": 45000,
+      "fecha_pago": "2026-10-10T11:30:00.000Z",
+      "metodo_pago": "Tarjeta de crédito",
+      "referencia": "HP-PAG-20261010-001",
+      "estado": "aprobado",
+      "porcentaje_comision": 15,
+      "valor_comision": 6750,
+      "neto_proveedor": 38250
+    }
+  ],
+  "reportes": [
+    {
+      "id": 1,
+      "tipo_reporte": "ingresos_comisiones",
+      "titulo": "Informe de Comisiones y Ventas - Octubre 2026",
+      "fecha_inicio": "2026-10-01",
+      "fecha_fin": "2026-10-31",
+      "resumen": "Cierre preliminar del periodo con 1 servicio intermediado y comisiones liquidadas al 15%.",
+      "total_transacciones": 1,
+      "ingresos_totales": 45000,
+      "comisiones_totales": 6750,
+      "creadoEn": "2026-10-12T10:00:00.000Z"
+    }
+  ],
+  "configuracion": [
+    {
+      "id": 1,
+      "porcentajeComision": 15,
+      "actualizadoEn": "2026-10-12T08:00:00.000Z",
+      "actualizadoPor": "Administrador Home Pet"
+    }
+  ]
 }

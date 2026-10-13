@@ -48,6 +48,7 @@ export default function ContratarServicio({ servicio, proveedor, usuario, alCont
         usuarioId: usuario.id,
         mascotaId: Number(valores.mascotaId),
         servicioId: servicio.id,
+        proveedorId: servicio.proveedorId,
         fecha: valores.fecha,
         hora: valores.hora,
         direccion: valores.direccion.trim(),

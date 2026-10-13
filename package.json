@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "concurrently -n api,web -c yellow,cyan \"npm:api\" \"npm:web\"",
     "web": "vite",
-    "api": "json-server db.json --port 3001",
+    "api": "json-server db.json --port 3001 --watch",
     "build": "vite build",
     "preview": "vite preview",
     "restaurar-datos": "node -e \"require('fs').copyFileSync('db.inicial.json','db.json')\""

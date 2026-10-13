@@ -10,15 +10,11 @@ import Mascotas from './pages/Mascotas/Mascotas';
 import Proveedores from './pages/Proveedores/Proveedores';
 import Servicios from './pages/Servicios/Servicios';
 import Contacto from './pages/Contacto/Contacto';
-import ModuloPendiente from './pages/Pendiente/ModuloPendiente';
+import Reservas from './pages/Reservas/Reservas';
+import Pagos from './pages/Pagos/Pagos';
+import Reportes from './pages/Reportes/Reportes';
+import Configuracion from './pages/Configuracion/Configuracion';
 import NoEncontrada from './pages/NoEncontrada';
-
-const MODULOS_PENDIENTES = [
-  { ruta: '/reservas', modulo: 'reservas', nombre: 'reservas' },
-  { ruta: '/pagos', modulo: 'pagos', nombre: 'pagos' },
-  { ruta: '/reportes', modulo: 'reportes', nombre: 'reportes' },
-  { ruta: '/configuracion', modulo: 'configuracion', nombre: 'configuración' },
-];
 
 export default function App() {
   return (
@@ -55,17 +51,38 @@ export default function App() {
               </RutaPrivada>
             }
           />
-          {MODULOS_PENDIENTES.map(({ ruta, modulo, nombre }) => (
-            <Route
-              key={ruta}
-              path={ruta}
-              element={
-                <RutaPrivada modulo={modulo}>
-                  <ModuloPendiente nombre={nombre} />
-                </RutaPrivada>
-              }
-            />
-          ))}
+          <Route
+            path="/reservas"
+            element={
+              <RutaPrivada modulo="reservas">
+                <Reservas />
+              </RutaPrivada>
+            }
+          />
+          <Route
+            path="/pagos"
+            element={
+              <RutaPrivada modulo="pagos">
+                <Pagos />
+              </RutaPrivada>
+            }
+          />
+          <Route
+            path="/reportes"
+            element={
+              <RutaPrivada modulo="reportes">
+                <Reportes />
+              </RutaPrivada>
+            }
+          />
+          <Route
+            path="/configuracion"
+            element={
+              <RutaPrivada modulo="configuracion">
+                <Configuracion />
+              </RutaPrivada>
+            }
+          />
           <Route path="*" element={<NoEncontrada />} />
         </Routes>
       </main>

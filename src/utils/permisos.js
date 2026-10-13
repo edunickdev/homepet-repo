@@ -1,5 +1,5 @@
 const MODULOS_POR_ROL = {
-  propietario: ['mascotas', 'servicios', 'reservas'],
+  propietario: ['mascotas', 'servicios', 'reservas', 'pagos'],
   proveedor: ['servicios', 'reservas', 'pagos', 'reportes'],
   administrador: ['usuarios', 'servicios', 'proveedores', 'reservas', 'pagos', 'reportes', 'configuracion'],
 };
